@@ -44,11 +44,10 @@ tongchiahet3 = 1
 str_tongchiahet3= 'D='
 
 for i in range(1,n+1,3):
-    if tongchiahet3 < 3:
-        print('khong ton tai D=0')
-    else:    
-        tongchiahet3*=i
+    tongchiahet3*=i
     str_tongchiahet3+=str(i)+'+'
-
-kq_tongchiahet3=str_tongchiahet3.rstrip('+')+'='+str(tongchiahet3)
-print('Ket qua cua tong chia het 3 la: ', kq_tongchiahet3)
+if tongchiahet3 == 0:
+    print("Khong ton tai D")
+else:
+    kq_tongchiahet3=str_tongchiahet3.rstrip('+')+'='+str(tongchiahet3)
+    print('Ket qua cua tong chia het 3 la: ', kq_tongchiahet3)
